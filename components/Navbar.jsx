@@ -39,7 +39,7 @@ const Navbar = () => {
             <Link className='hover:text-gray-300 hover:underline' href='/'>Home</Link>
           </li>
           <li className='p-4'>
-            <Link className='hover:text-gray-300 hover:underline' href='/about'>À propos</Link>
+            <Link className='hover:text-gray-300 hover:underline' href='/#about'>À propos</Link>
           </li>
           <li className='p-4'>
             <Link className='hover:text-gray-300 hover:underline' href='/#chambres'>Chambres</Link>
