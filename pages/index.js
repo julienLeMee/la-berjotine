@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Homepage from '@/components/Homepage'
-import Content from '@/components/Content'
+import About from '@/components/About'
 import Slider from '@/components/Slider'
 import Instagram from '@/components/Instagram'
 import { SliderData } from '@/components/SliderData'
@@ -16,8 +16,8 @@ export default function Home() {
       </Head>
       <Homepage />
       <Slider slides={SliderData} />
+      <About />
       <Instagram />
-      <Content />
     </>
   )
 }
