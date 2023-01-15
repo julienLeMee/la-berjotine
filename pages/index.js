@@ -4,6 +4,7 @@ import About from '@/components/About'
 import Slider from '@/components/Slider'
 import Instagram from '@/components/Instagram'
 import { SliderData } from '@/components/SliderData'
+import Rooms from '@/components/Rooms'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Homepage />
       <Slider slides={SliderData} />
       <About />
+      <Rooms />
       <Instagram />
     </>
   )
