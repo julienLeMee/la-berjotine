@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import cosyImg from '../public/assets/cosy.jpg'
+import vintageImg from '../public/assets/vintage.jpg'
 
 const VintageGallery = () => {
   return (
@@ -9,7 +9,7 @@ const VintageGallery = () => {
       <div className='grid grid-rows-none md:grid-cols-5 p-4 gap-4'>
         <div className='w-full h-full col-span-2 md:col-span-3 row-span-2'>
           <Image
-            src={cosyImg}
+            src={vintageImg}
             alt='/'
             style={{ objectFit: 'cover' }}
             width='677'
@@ -18,7 +18,7 @@ const VintageGallery = () => {
         </div>
         <div className='w-full h-full'>
           <Image
-            src={cosyImg}
+            src={vintageImg}
             alt='/'
             width='215'
             height='217'
@@ -27,7 +27,7 @@ const VintageGallery = () => {
         </div>
         <div className='w-full h-full'>
           <Image
-            src={cosyImg}
+            src={vintageImg}
             alt='/'
             width='215'
             height='217'
@@ -36,7 +36,7 @@ const VintageGallery = () => {
         </div>
         <div className='w-full h-full'>
           <Image
-            src={cosyImg}
+            src={vintageImg}
             alt='/'
             width='215'
             height='217'
@@ -45,7 +45,7 @@ const VintageGallery = () => {
         </div>
         <div className='w-full h-full'>
           <Image
-            src={cosyImg}
+            src={vintageImg}
             alt='/'
             width='215'
             height='217'

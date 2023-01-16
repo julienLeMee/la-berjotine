@@ -27,7 +27,9 @@ const cosy = () => {
             <p className='text-center font-bold pb-2'>Tarifs</p>
             <div className='grid grid-cols-3 md:grid-cols-1'>
               <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='mr-2'/> 110 € / nuit</p>
-              <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='mr-2'/> 8 € petit déjeuner</p>
+              <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='mr-2'/> Petit déjeuner gratuit</p>
+              <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='mr-2'/> Parking gratuit</p>
+              <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='mr-2'/> Wifi gratuit</p>
             </div>
           </div>
         </div>

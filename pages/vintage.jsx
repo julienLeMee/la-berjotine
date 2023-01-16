@@ -1,17 +1,17 @@
 import Image from 'next/image'
 import React from 'react'
-import cosyImg from '../public/assets/cosy.jpg'
 import { RiRadioButtonFill } from 'react-icons/ri'
 import { AiOutlineArrowLeft } from 'react-icons/ai'
 import Link from 'next/link'
-import CosyGallery from '../components/CosyGallery'
+import VintageGallery from '../components/VintageGallery'
+import vintageImg from '../public/assets/vintage.jpg'
 
-const cosy = () => {
+const vintage = () => {
   return (
     <div className='w-full'>
       <div className='w-screen h-[50vh] relative'>
         <div className='absolute top-0 left-0 w-full h-[50vh] bg-black/30 z-10' />
-          <Image className='absolute z-1' layout='fill' objectFit='cover' src={cosyImg} alt='cosy' />
+          <Image className='absolute z-1' layout='fill' objectFit='cover' src={vintageImg} alt='cosy' />
       </div>
 
       <div className='max-w-[80%] mx-auto py-20 grid md:grid-cols-5 gap 8 pt-8'>
@@ -27,7 +27,9 @@ const cosy = () => {
             <p className='text-center font-bold pb-2'>Tarifs</p>
             <div className='grid grid-cols-3 md:grid-cols-1'>
               <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='mr-2'/> 110 € / nuit</p>
-              <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='mr-2'/> 8 € petit déjeuner</p>
+              <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='mr-2'/> Petit déjeuner gratuit</p>
+              <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='mr-2'/> Parking gratuit</p>
+              <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='mr-2'/> Wifi gratuit</p>
             </div>
           </div>
         </div>
@@ -35,9 +37,9 @@ const cosy = () => {
           <p className='text-center mt-10 w-full py-2 bg-[#01647C] rounded-lg text-white text-lg cursor-pointer hover:scale-105 hover:text-gray-300 hover:underline duration-300'>Retour</p>
         </Link>
       </div>
-      <CosyGallery />
+      <VintageGallery />
     </div>
   )
 }
 
-export default cosy
+export default vintage
