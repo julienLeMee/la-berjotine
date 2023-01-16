@@ -14,10 +14,10 @@ const Contact = () => {
           <h1 className='text-5xl'>CONTACT</h1>
         </div>
       </div>
-      <div className='w-full md:h-screen p-2 flex items-center'>
+      <div className='w-full h-full py-20 flex items-center'>
         <div className='max-w-[80%] m-auto md:grid grid-cols-3 gap-8'>
           <div className='col-span-2'>
-            <p className='uppercase text-xl tracking-widest text-[#01647C]'>Contact</p>
+            <p className='uppercase text-xl tracking-widest text-[#01647C] mb-8'>Contact</p>
             <p className='py-3 text-xl'>Adresse : Rue du Calvaire 71120 Charolles</p>
             <p className='py-3 text-xl'>Téléphone : 06 87 33 40 27 / 03 85 24 10 35</p>
             <p className='py-3 text-xl'>Mail : laberjotine@gmail.com</p>
@@ -31,21 +31,27 @@ const Contact = () => {
         <div className='max-w-[80%] m-auto md:grid grid-cols-3 gap-8'>
           <div className='col-span-2'>
             <p className='uppercase text-xl tracking-widest text-[#01647C] mb-8'>Plan d'accès</p>
-            <div className='w-10 rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-[#5651e5] ease-in duration-300'>
-              <AiFillCar />
+            <div className="flex items-center py-4">
+              <div className='w-10 h-10 mr-10 rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-[#5651e5] ease-in duration-300'>
+                <AiFillCar />
+              </div>
+              <p className='py-3 text-xl mb-4'>En voiture : <br /> Coordonnées GPS - Latitude : 46.433333 - Longitude : 4.283333</p>
             </div>
-            <p className='py-3 text-xl mb-4'>En voiture : Coordonnées GPS - Latitude : 46.433333 - Longitude : 4.283333</p>
-            <div className='w-10 rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-[#5651e5] ease-in duration-300'>
-              <BiTrain />
+            <div className="flex items-center py-4">
+              <div className='w-10 h-10 mr-10  rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-[#5651e5] ease-in duration-300'>
+                <BiTrain />
             </div>
-            <p className='py-3 text-xl mb-4'>En train : Gare TGV de Mâcon ou Montchanin (45 minutes en voiture)</p>
-            <div className='w-10 rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-[#5651e5] ease-in duration-300'>
-              <MdOutlineLocalParking />
+              <p className='py-3 text-xl mb-4'>En train : Gare TGV de Mâcon ou Montchanin (45 minutes en voiture)</p>
             </div>
-            <p className='py-3 text-xl mb-4'>
-              Se garer : Deux parkings proches de la maison vous permettront de vous garer : parking du tennis ou du cinéma situé à 100 mètres de la maison. <br />
-              Possibilité de se stationner temporairement devant la maison pour décharger les bagages.
-            </p>
+            <div className="flex items-center py-4">
+              <div className='w-10 h-10 mr-10  rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-[#5651e5] ease-in duration-300'>
+                <MdOutlineLocalParking />
+              </div>
+              <p className='py-3 text-xl mb-4'>
+                Se garer : Deux parkings proches de la maison vous permettront de vous garer : parking du tennis ou du cinéma situé à 100 mètres de la maison. <br />
+                Possibilité de se stationner temporairement devant la maison pour décharger les bagages.
+              </p>
+            </div>
           </div>
         </div>
       </div>
