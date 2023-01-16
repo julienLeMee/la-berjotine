@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import { FaFacebookF } from 'react-icons/fa'
-import { TbBrandBooking } from 'react-icons/tb'
+import { BsFillTelephoneFill } from 'react-icons/bs'
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai'
 import navLogoImg from './../public/assets/LogoBerjotine.png'
 
@@ -37,7 +37,7 @@ const Navbar = () => {
         </Link>
         <ul style={{color: `${textColor}`}} className='hidden sm:flex'>
           <li className='p-4'>
-            <Link className='hover:text-gray-300 hover:underline' href='/'>Home</Link>
+            <Link className='hover:text-gray-300 hover:underline' href='/'>Accueil</Link>
           </li>
           <li className='p-4'>
             <Link className='hover:text-gray-300 hover:underline' href='/#about'>À propos</Link>
@@ -73,7 +73,7 @@ const Navbar = () => {
           <div className='py-4 flex flex-col'>
             <ul className='uppercase'>
               <Link href='/'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>Home</li>
+                <li onClick={() => setNav(false)} className='py-4 text-sm'>Accueil</li>
               </Link>
               <Link href='/#about'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>À propos</li>
@@ -87,14 +87,14 @@ const Navbar = () => {
             </ul>
             <div className='pt-30'>
               <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
+                <Link href="tel:0687324027" target='_blank'>
+                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-[#01647C] ease-in duration-300'>
+                    <BsFillTelephoneFill />
+                  </div>
+                </Link>
                 <Link href='mailto:laberjotine@gmail.com' target='_blank'>
                   <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-[#01647C] ease-in duration-300'>
                     <AiOutlineMail />
-                  </div>
-                </Link>
-                <Link href='https://www.booking.com/hotel/fr/la-berjotine.fr.html' target='_blank'>
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-[#01647C] ease-in duration-300'>
-                    <TbBrandBooking />
                   </div>
                 </Link>
                 <Link href='https://fr-fr.facebook.com/laberjotine/' target='_blank'>

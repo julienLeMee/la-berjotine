@@ -11,7 +11,7 @@ const RoomItem = ({title, backgroundImg, projectUrl, tarifs}) => {
         <h3 className='text-2xl text-white tracking-wider text-center'>{title}</h3>
         <p className='pb-4 pt-2 text-white text-center'>{tarifs}</p>
         <Link href={projectUrl}>
-          <p className='text-center py-2 rounded-lg bg-white text-gray-700 text-sm cursor-pointer hover:scale-105 hover:text-[#01647C] duration-300'>More info</p>
+          <p className='text-center py-2 rounded-lg bg-white text-gray-700 text-sm cursor-pointer hover:scale-105 hover:text-[#01647C] duration-300'>Plus d'infos</p>
         </Link>
       </div>
     </div>

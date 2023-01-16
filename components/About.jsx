@@ -7,12 +7,11 @@ const About = () => {
     <div id='about' className='w-full py-40 flex items-center mb-2 md:mb-10'>
       <div className='max-w-[80%] m-auto md:grid grid-cols-3 gap-8'>
         <div className='col-span-2'>
-          <p className='uppercase text-xl tracking-widest text-[#01647C]'>À propos</p>
-          <h2 className='py-4'>UN COIN DE PARADIS AU COEUR DU CHAROLAIS</h2>
-          <p className='py-2 text-gray-600'>A deux pas du centre ville de Charolles</p>
+          <p className='uppercase text-xl tracking-widest text-[#01647C] py-4'>UN COIN DE PARADIS AU COEUR DU CHAROLAIS</p>
           <p className='py-2 pr-10 mb-8 text-gray-600'>
-            La Berjotine vous propose 3 chambres aux charmes très différents, au coeur d'une maison du 18 ème siècle. <br />
-            Entièrement renovée, elle allie ancien et modernité. Une décoration toute en nuances de couleurs, qui crée une ambiance pour chaque espace. Bientôt un jardin et sa terrasse couverte agrémenteront l'espace extérieur.</p>
+            A deux pas de la place de l'église de Charolles, La Berjotine vous propose 3 chambres aux charmes très différents, dans une maison du 18 ème siècle entièrement renovée. <br />
+            Elle allie ancien et modernité avec une décoration toute en nuances de couleurs, qui crée une ambiance pour chaque espace. <br />
+          </p>
         </div>
         <div className='max-w-[80%] h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 duration-300'>
           <Image src={aboutImg} alt="" />

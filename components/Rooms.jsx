@@ -10,28 +10,27 @@ const Projects = () => {
       <div className='max-w-[80%] mx-auto'>
         <p className='text-xl tracking-widest uppercase text-[#01647C]'>Chambres</p>
         <p className='py-4'>
-          A l'étage un salon vous permettra de profiter d'un moment de lecture ou de détente.
+          A l'étage un salon vous permettra de profiter d'un moment de lecture ou de détente. <br />
           Toutes les chambres possèdent une salle de bain et un wc privatif.
-          Un ascenceur est à disposition des clients les moins habiles pour accèder aux chambres.
         </p>
         <div className='grid md:grid-cols-3 gap-8'>
 
           <RoomItem
             title='Cosy'
             backgroundImg={cosyImg}
-            tarifs='95 € / nuit'
+            tarifs='105 € / nuit'
             projectUrl='/cosy'
           />
           <RoomItem
             title='Vintage'
             backgroundImg={vintageImg}
-            tarifs='115 € / nuit'
+            tarifs='130 € / nuit'
             projectUrl='/vintage'
           />
           <RoomItem
             title='Art Deco'
             backgroundImg={artDecoImg}
-            tarifs='105 € / nuit'
+            tarifs='120 € / nuit'
             projectUrl='/art-deco'
           />
         </div>

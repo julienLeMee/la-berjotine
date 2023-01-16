@@ -25,8 +25,8 @@ const ArtDeco = () => {
           <div className="p-2">
             <p className='text-center font-bold pb-2'>Tarifs</p>
             <div className='grid grid-cols-2 md:grid-cols-1'>
-              <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='mr-2'/> 105 € / nuit</p>
-              <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='mr-2'/> Petit déjeuner gratuit</p>
+              <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='mr-2'/> 120 € / nuit</p>
+              <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='mr-2'/> Petit déjeuner inclus</p>
               <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='mr-2'/> Parking gratuit</p>
               <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='mr-2'/> Wifi gratuit</p>
             </div>
@@ -35,6 +35,26 @@ const ArtDeco = () => {
         <Link href='/#rooms'>
           <p className='text-center mt-10 w-24 py-2 bg-[#01647C] rounded-lg text-white text-lg cursor-pointer hover:scale-105 hover:text-gray-300 hover:underline duration-300'>Retour</p>
         </Link>
+      </div>
+      <div className='max-w-[80%] mx-auto'>
+        <p className='text-xs pr-10 italic text-gray-600'>
+          * Prix petit déjeuner compris pour 2 personnes maxi
+        </p>
+        <p className='text-xs pr-10 italic text-gray-600'>
+          * Possibilité d'ajouter un lit pour enfant jusqu 'à 10 ans uniquement pour les chambres 1 et 2 (+ 40 €  par lit)
+        </p>
+        <p className='text-xs pr-10 italic text-gray-600'>
+          * Petit déjeuner supplémentaire 7€
+        </p>
+        <p className='text-xs pr-10 italic text-gray-600'>
+          * Animaux non acceptés
+        </p>
+        <p className='text-xs pr-10 italic text-gray-600'>
+          * Etablissement non fumeur
+        </p>
+        <p className='text-xs pr-10 italic text-gray-600'>
+          * CB acceptée
+        </p>
       </div>
       <ArtDecoGallery />
     </div>

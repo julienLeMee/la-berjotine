@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import { FaFacebookF } from 'react-icons/fa'
 import { AiOutlineMail } from 'react-icons/ai'
-import { TbBrandBooking } from 'react-icons/tb'
+import { BsFillTelephoneFill } from 'react-icons/bs'
 
 const Footer = () => {
   return (
@@ -11,17 +11,17 @@ const Footer = () => {
         <p className='text-sm'>
           13 Rue du Calvaire <br />
           71120 Charolles <br />
-          06 87 33 40 27 <br />
-          03 85 24 10 35
+          <a className='text-[#01647C]' href="tel:0687324027" onClick={(event) => event.preventDefault()} >06.87.33.40.27</a> <br />
+          <a className='text-[#01647C]' href="tel:0385241035" onClick={(event) => event.preventDefault()} >03.85.24.10.35</a>
         </p>
+        <Link href="tel:0687324027" target='_blank'>
+          <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-[#01647C] ease-in duration-300'>
+            <BsFillTelephoneFill />
+          </div>
+        </Link>
         <Link href='mailto:laberjotine@gmail.com' target='_blank'>
           <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-[#01647C] ease-in duration-300'>
             <AiOutlineMail />
-          </div>
-        </Link>
-        <Link href='https://www.booking.com/hotel/fr/la-berjotine.fr.html' target='_blank'>
-          <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-[#01647C] ease-in duration-300'>
-            <TbBrandBooking />
           </div>
         </Link>
         <Link href='https://fr-fr.facebook.com/laberjotine/' target='_blank'>
