@@ -4,6 +4,7 @@ import cosyImg from '../public/assets/cosy.jpg'
 import { RiRadioButtonFill } from 'react-icons/ri'
 import { AiOutlineArrowLeft } from 'react-icons/ai'
 import Link from 'next/link'
+import CosyGallery from '../components/CosyGallery'
 
 const cosy = () => {
   return (
@@ -13,10 +14,10 @@ const cosy = () => {
           <Image className='absolute z-1' layout='fill' objectFit='cover' src={cosyImg} alt='cosy' />
       </div>
 
-      <div className='max-w-[80%] mx-auto p-2 grid md:grid-cols-5 gap 8 pt-8'>
+      <div className='max-w-[80%] mx-auto py-20 grid md:grid-cols-5 gap 8 pt-8'>
         <div className='col-span-4'>
-          <p className='uppercase text-xl tracking-widest text-[#01647C] py-10'>La chambre Vintage</p>
-          <p className='pr-16 mb-8'>
+          <p className='uppercase text-xl tracking-widest text-[#01647C] py-10'>La chambre Cosy</p>
+          <p className='md:pr-16 mb-8'>
             Découvrez la grande chambre de la maison, aux inspirations résolument années 70, où la douceur du gris se mêle au jaune flamboyant. <br />
             Avec deux lits séparés ou joints, elle propose une salle de bain spacieuse avec baignoire d'angle et wc indépendant.
           </p>
@@ -34,6 +35,7 @@ const cosy = () => {
           <p className='text-center mt-10 w-full py-2 bg-[#01647C] rounded-lg text-white text-lg cursor-pointer hover:scale-105 hover:text-gray-300 hover:underline duration-300'>Retour</p>
         </Link>
       </div>
+      <CosyGallery />
     </div>
   )
 }
