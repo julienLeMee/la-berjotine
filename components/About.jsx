@@ -8,7 +8,7 @@ const About = () => {
           <p className='uppercase text-xl tracking-widest text-[#01647C]'>À propos</p>
           <h2 className='py-4'>UN COIN DE PARADIS AU COEUR DU CHAROLAIS</h2>
           <p className='py-2 text-gray-600'>A deux pas du centre ville de Charolles</p>
-          <p className='py-2 text-gray-600'>
+          <p className='py-2 pr-10 text-gray-600'>
             La Berjotine vous propose 3 chambres aux charmes très différents, au coeur d'une maison du 18 ème siècle. <br />
             Entièrement renovée, elle allie ancien et modernité. Une décoration toute en nuances de couleurs, qui crée une ambiance pour chaque espace. Bientôt un jardin et sa terrasse couverte agrémenteront l'espace extérieur.</p>
         </div>
