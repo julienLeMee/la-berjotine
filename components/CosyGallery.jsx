@@ -1,6 +1,10 @@
 import Image from 'next/image';
 import React from 'react';
-import cosyImg from '../public/assets/cosy.jpg'
+import cosyGalleryImg1 from '../public/assets/cosyGallery/cosyGallery-1.jpg'
+import cosyGalleryImg2 from '../public/assets/cosyGallery/cosyGallery-2.jpg'
+import cosyGalleryImg3 from '../public/assets/cosyGallery/cosyGallery-3.jpg'
+import cosyGalleryImg4 from '../public/assets/cosyGallery/cosyGallery-4.jpg'
+import cosyGalleryImg5 from '../public/assets/cosyGallery/cosyGallery-6.jpg'
 
 const CosyGallery = () => {
   return (
@@ -9,7 +13,8 @@ const CosyGallery = () => {
       <div className='grid grid-rows-none md:grid-cols-5 p-4 gap-4'>
         <div className='w-full h-full col-span-2 md:col-span-3 row-span-2'>
           <Image
-            src={cosyImg}
+            className='w-full h-full'
+            src={cosyGalleryImg1}
             alt='/'
             style={{ objectFit: 'cover' }}
             width='677'
@@ -18,16 +23,7 @@ const CosyGallery = () => {
         </div>
         <div className='w-full h-full'>
           <Image
-            src={cosyImg}
-            alt='/'
-            width='215'
-            height='217'
-            style={{ objectFit: 'contain' }}
-          />
-        </div>
-        <div className='w-full h-full'>
-          <Image
-            src={cosyImg}
+            src={cosyGalleryImg3}
             alt='/'
             width='215'
             height='217'
@@ -36,7 +32,7 @@ const CosyGallery = () => {
         </div>
         <div className='w-full h-full'>
           <Image
-            src={cosyImg}
+            src={cosyGalleryImg5}
             alt='/'
             width='215'
             height='217'
@@ -45,7 +41,16 @@ const CosyGallery = () => {
         </div>
         <div className='w-full h-full'>
           <Image
-            src={cosyImg}
+            src={cosyGalleryImg2}
+            alt='/'
+            width='215'
+            height='217'
+            style={{ objectFit: 'cover' }}
+          />
+        </div>
+        <div className='w-full h-full'>
+          <Image
+            src={cosyGalleryImg4}
             alt='/'
             width='215'
             height='217'

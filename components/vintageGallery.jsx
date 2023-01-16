@@ -1,6 +1,10 @@
 import Image from 'next/image';
 import React from 'react';
-import vintageImg from '../public/assets/vintage.jpg'
+import vintageGalleryImg1 from '../public/assets/vintageGallery/vintageGallery-1.jpg'
+import vintageGalleryImg2 from '../public/assets/vintageGallery/vintageGallery-2.jpg'
+import vintageGalleryImg3 from '../public/assets/vintageGallery/vintageGallery-5.jpg'
+import vintageGalleryImg4 from '../public/assets/vintageGallery/vintageGallery-4.jpg'
+import vintageGalleryImg5 from '../public/assets/vintageGallery/vintageGallery-6.jpg'
 
 const VintageGallery = () => {
   return (
@@ -9,7 +13,7 @@ const VintageGallery = () => {
       <div className='grid grid-rows-none md:grid-cols-5 p-4 gap-4'>
         <div className='w-full h-full col-span-2 md:col-span-3 row-span-2'>
           <Image
-            src={vintageImg}
+            src={vintageGalleryImg1}
             alt='/'
             style={{ objectFit: 'cover' }}
             width='677'
@@ -18,7 +22,7 @@ const VintageGallery = () => {
         </div>
         <div className='w-full h-full'>
           <Image
-            src={vintageImg}
+            src={vintageGalleryImg2}
             alt='/'
             width='215'
             height='217'
@@ -27,7 +31,7 @@ const VintageGallery = () => {
         </div>
         <div className='w-full h-full'>
           <Image
-            src={vintageImg}
+            src={vintageGalleryImg3}
             alt='/'
             width='215'
             height='217'
@@ -36,7 +40,7 @@ const VintageGallery = () => {
         </div>
         <div className='w-full h-full'>
           <Image
-            src={vintageImg}
+            src={vintageGalleryImg4}
             alt='/'
             width='215'
             height='217'
@@ -45,7 +49,7 @@ const VintageGallery = () => {
         </div>
         <div className='w-full h-full'>
           <Image
-            src={vintageImg}
+            src={vintageGalleryImg5}
             alt='/'
             width='215'
             height='217'

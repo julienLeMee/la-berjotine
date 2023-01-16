@@ -24,8 +24,8 @@ const ArtDeco = () => {
         <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4 h-auto'>
           <div className="p-2">
             <p className='text-center font-bold pb-2'>Tarifs</p>
-            <div className='grid grid-cols-3 md:grid-cols-1'>
-              <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='mr-2'/> 110 € / nuit</p>
+            <div className='grid grid-cols-2 md:grid-cols-1'>
+              <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='mr-2'/> 105 € / nuit</p>
               <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='mr-2'/> Petit déjeuner gratuit</p>
               <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='mr-2'/> Parking gratuit</p>
               <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='mr-2'/> Wifi gratuit</p>
@@ -33,7 +33,7 @@ const ArtDeco = () => {
           </div>
         </div>
         <Link href='/#rooms'>
-          <p className='text-center mt-10 w-full py-2 bg-[#01647C] rounded-lg text-white text-lg cursor-pointer hover:scale-105 hover:text-gray-300 hover:underline duration-300'>Retour</p>
+          <p className='text-center mt-10 w-24 py-2 bg-[#01647C] rounded-lg text-white text-lg cursor-pointer hover:scale-105 hover:text-gray-300 hover:underline duration-300'>Retour</p>
         </Link>
       </div>
       <ArtDecoGallery />

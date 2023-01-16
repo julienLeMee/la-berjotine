@@ -1,6 +1,10 @@
 import Image from 'next/image';
 import React from 'react';
-import artDecoImg from '../public/assets/art-deco.jpg'
+import artDecoGalleryImg1 from '../public/assets/artDecoGallery/artDecoGallery-1.jpg'
+import artDecoGalleryImg2 from '../public/assets/artDecoGallery/artDecoGallery-2.jpg'
+import artDecoGalleryImg3 from '../public/assets/artDecoGallery/artDecoGallery-3.jpg'
+import artDecoGalleryImg4 from '../public/assets/artDecoGallery/artDecoGallery-4.jpg'
+import artDecoGalleryImg5 from '../public/assets/artDecoGallery/artDecoGallery-6.jpg'
 
 const ArtDecoGallery = () => {
   return (
@@ -9,7 +13,7 @@ const ArtDecoGallery = () => {
       <div className='grid grid-rows-none md:grid-cols-5 p-4 gap-4'>
         <div className='w-full h-full col-span-2 md:col-span-3 row-span-2'>
           <Image
-            src={artDecoImg}
+            src={artDecoGalleryImg1}
             alt='/'
             style={{ objectFit: 'cover' }}
             width='677'
@@ -18,7 +22,7 @@ const ArtDecoGallery = () => {
         </div>
         <div className='w-full h-full'>
           <Image
-            src={artDecoImg}
+            src={artDecoGalleryImg2}
             alt='/'
             width='215'
             height='217'
@@ -27,7 +31,7 @@ const ArtDecoGallery = () => {
         </div>
         <div className='w-full h-full'>
           <Image
-            src={artDecoImg}
+            src={artDecoGalleryImg3}
             alt='/'
             width='215'
             height='217'
@@ -36,7 +40,7 @@ const ArtDecoGallery = () => {
         </div>
         <div className='w-full h-full'>
           <Image
-            src={artDecoImg}
+            src={artDecoGalleryImg5}
             alt='/'
             width='215'
             height='217'
@@ -45,7 +49,7 @@ const ArtDecoGallery = () => {
         </div>
         <div className='w-full h-full'>
           <Image
-            src={artDecoImg}
+            src={artDecoGalleryImg4}
             alt='/'
             width='215'
             height='217'
