@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import { FaLinkedinIn, FaGithub, FaTwitter } from 'react-icons/fa'
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai'
-import navLogoImg from './../public/assets/berjotine-logo.png'
+import navLogoImg from './../public/assets/LogoBerjotine.png'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false)
