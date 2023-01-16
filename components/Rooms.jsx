@@ -6,8 +6,8 @@ import artDecoImg from '../public/assets/art-deco.jpg'
 
 const Projects = () => {
   return (
-    <div id='chambres' className='w-full p-2'>
-      <div className='max-w-[1100px] mx-auto'>
+    <div id='chambres' className='w-full p-2 mb-20'>
+      <div className='max-w-[80%] mx-auto'>
         <p className='text-xl tracking-widest uppercase text-[#01647C]'>Chambres</p>
         <p className='py-4'>
           A l'étage un salon vous permettra de profiter d'un moment de lecture ou de détente.
@@ -19,16 +19,19 @@ const Projects = () => {
           <RoomItem
             title='Cosy'
             backgroundImg={cosyImg}
+            tarifs='110 € / nuit'
             projectUrl='/cosy'
           />
           <RoomItem
             title='Vintage'
             backgroundImg={vintageImg}
+            tarifs='90 € / nuit'
             projectUrl='/vintage'
           />
           <RoomItem
             title='Art Deco'
             backgroundImg={artDecoImg}
+            tarifs='115 € / nuit'
             projectUrl='/art-deco'
           />
         </div>

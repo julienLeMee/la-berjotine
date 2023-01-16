@@ -20,7 +20,6 @@ export default function Home() {
       <Slider slides={SliderData} />
       <About />
       <Rooms />
-      <Tarifs />
       <Instagram />
     </>
   )
