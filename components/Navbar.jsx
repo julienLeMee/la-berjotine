@@ -87,6 +87,11 @@ const Navbar = () => {
             </ul>
             <div className='pt-30'>
               <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
+                <Link href='mailto:laberjotine@gmail.com' target='_blank'>
+                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-[#01647C] ease-in duration-300'>
+                    <AiOutlineMail />
+                  </div>
+                </Link>
                 <Link href='https://www.booking.com/hotel/fr/la-berjotine.fr.html' target='_blank'>
                   <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-[#01647C] ease-in duration-300'>
                     <TbBrandBooking />
@@ -95,11 +100,6 @@ const Navbar = () => {
                 <Link href='https://fr-fr.facebook.com/laberjotine/' target='_blank'>
                   <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-[#01647C] ease-in duration-300'>
                     <FaFacebookF />
-                  </div>
-                </Link>
-                <Link href='mailto:laberjotine@gmail.com' target='_blank'>
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-[#01647C] ease-in duration-300'>
-                    <AiOutlineMail />
                   </div>
                 </Link>
               </div>

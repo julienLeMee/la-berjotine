@@ -6,7 +6,7 @@ import Link from 'next/link'
 import VintageGallery from '../components/VintageGallery'
 import vintageImg from '../public/assets/vintage.jpg'
 
-const vintage = () => {
+const Vintage = () => {
   return (
     <div className='w-full'>
       <div className='w-screen h-[50vh] relative'>
@@ -42,4 +42,4 @@ const vintage = () => {
   )
 }
 
-export default vintage
+export default Vintage

@@ -14,6 +14,11 @@ const Footer = () => {
           06 87 33 40 27 <br />
           03 85 24 10 35
         </p>
+        <Link href='mailto:laberjotine@gmail.com' target='_blank'>
+          <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-[#01647C] ease-in duration-300'>
+            <AiOutlineMail />
+          </div>
+        </Link>
         <Link href='https://www.booking.com/hotel/fr/la-berjotine.fr.html' target='_blank'>
           <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-[#01647C] ease-in duration-300'>
             <TbBrandBooking />
@@ -22,11 +27,6 @@ const Footer = () => {
         <Link href='https://fr-fr.facebook.com/laberjotine/' target='_blank'>
           <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-[#01647C] ease-in duration-300'>
             <FaFacebookF />
-          </div>
-        </Link>
-        <Link href='mailto:laberjotine@gmail.com' target='_blank'>
-          <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-[#01647C] ease-in duration-300'>
-            <AiOutlineMail />
           </div>
         </Link>
       </div>

@@ -5,7 +5,6 @@ import Slider from '@/components/Slider'
 import Instagram from '@/components/Instagram'
 import { SliderData } from '@/components/SliderData'
 import Rooms from '@/components/Rooms'
-import Tarifs from '@/components/Tarifs'
 import Reviews from '@/components/Reviews'
 
 export default function Home() {

@@ -6,7 +6,7 @@ import { AiOutlineArrowLeft } from 'react-icons/ai'
 import Link from 'next/link'
 import CosyGallery from '../components/CosyGallery'
 
-const cosy = () => {
+const Cosy = () => {
   return (
     <div className='w-full'>
       <div className='w-screen h-[50vh] relative'>
@@ -42,4 +42,4 @@ const cosy = () => {
   )
 }
 
-export default cosy
+export default Cosy

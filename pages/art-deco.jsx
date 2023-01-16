@@ -5,7 +5,7 @@ import { RiRadioButtonFill } from 'react-icons/ri'
 import Link from 'next/link'
 import ArtDecoGallery from '@/components/ArtDecoGallery'
 
-const cosy = () => {
+const ArtDeco = () => {
   return (
     <div className='w-full'>
       <div className='w-screen h-[50vh] relative'>
@@ -41,4 +41,4 @@ const cosy = () => {
   )
 }
 
-export default cosy
+export default ArtDeco
