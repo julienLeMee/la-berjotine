@@ -24,7 +24,7 @@ const Footer = () => {
             <FaFacebookF />
           </div>
         </Link>
-        <Link href='mailto:julemee@gmail.com' target='_blank'>
+        <Link href='mailto:laberjotine@gmail.com' target='_blank'>
           <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-[#01647C] ease-in duration-300'>
             <AiOutlineMail />
           </div>

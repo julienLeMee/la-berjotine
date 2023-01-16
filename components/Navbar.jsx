@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
-import { FaLinkedinIn, FaGithub, FaTwitter } from 'react-icons/fa'
+import { FaFacebookF } from 'react-icons/fa'
+import { TbBrandBooking } from 'react-icons/tb'
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai'
 import navLogoImg from './../public/assets/LogoBerjotine.png'
 
@@ -45,9 +46,6 @@ const Navbar = () => {
             <Link className='hover:text-gray-300 hover:underline' href='/#chambres'>Chambres</Link>
           </li>
           <li className='p-4'>
-            <Link className='hover:text-gray-300 hover:underline' href='/#tarifs'>Tarifs</Link>
-          </li>
-          <li className='p-4'>
             <Link className='hover:text-gray-300 hover:underline' href='/contact'>Contact</Link>
           </li>
         </ul>
@@ -80,9 +78,6 @@ const Navbar = () => {
               <Link href='/#about'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>À propos</li>
               </Link>
-              <Link href='/#tarifs'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>Tarifs</li>
-              </Link>
               <Link href='/#chambres'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>Chambres</li>
               </Link>
@@ -92,24 +87,19 @@ const Navbar = () => {
             </ul>
             <div className='pt-30'>
               <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
-                <Link href='https://www.linkedin.com/in/julien-le-mee/' target='_blank'>
+                <Link href='https://www.booking.com/hotel/fr/la-berjotine.fr.html' target='_blank'>
                   <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-[#01647C] ease-in duration-300'>
-                    <FaLinkedinIn />
+                    <TbBrandBooking />
                   </div>
                 </Link>
-                <Link href='https://github.com/julienLeMee' target='_blank'>
+                <Link href='https://fr-fr.facebook.com/laberjotine/' target='_blank'>
                   <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-[#01647C] ease-in duration-300'>
-                    <FaGithub />
+                    <FaFacebookF />
                   </div>
                 </Link>
-                <Link href='mailto:julemee@gmail.com' target='_blank'>
+                <Link href='mailto:laberjotine@gmail.com' target='_blank'>
                   <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-[#01647C] ease-in duration-300'>
                     <AiOutlineMail />
-                  </div>
-                </Link>
-                <Link href='https://twitter.com/majin__bun' target='_blank'>
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-[#01647C] ease-in duration-300'>
-                    <FaTwitter />
                   </div>
                 </Link>
               </div>
