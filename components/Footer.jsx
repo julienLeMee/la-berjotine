@@ -6,8 +6,8 @@ import { TbBrandBooking } from 'react-icons/tb'
 
 const Footer = () => {
   return (
-    <div className='pt-30'>
-      <div className='flex max-w-[80%] mx-auto items-center justify-evenly my-4 sm:w-[80%] border-t p-4'>
+    <div className='pt-10'>
+      <div className='flex max-w-[80%] mx-auto items-center justify-evenly my-4 sm:w-[80%] border-t p-4 pt-10'>
         <p className='text-sm'>
           13 Rue du Calvaire <br />
           71120 Charolles <br />

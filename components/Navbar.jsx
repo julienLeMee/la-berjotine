@@ -31,7 +31,7 @@ const Navbar = () => {
 
   return (
     <div style={{backgroundColor: `${color}`}} className='fixed left-0 top-0 w-full z-[100] ease-in duration-300'>
-      <div className='max-w-[1100px] m-auto flex items-center justify-between p-2 text-white'>
+      <div className='max-w-[80%] m-auto flex items-center justify-between p-2 text-white'>
         <Link href='/'>
           <Image src={navLogoImg} width={80} height={50} alt='logo' />
         </Link>
@@ -49,7 +49,7 @@ const Navbar = () => {
             <Link className='hover:text-gray-300 hover:underline' href='/contact'>Contact</Link>
           </li>
         </ul>
-        <div onClick={handleNav} className='md:hidden'>
+        <div onClick={handleNav} className='md:hidden' style={{color: `${textColor}`}}>
             <AiOutlineMenu size={25} />
         </div>
       </div>
