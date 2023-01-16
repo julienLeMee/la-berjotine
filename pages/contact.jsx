@@ -3,6 +3,7 @@ import { AiFillCar } from 'react-icons/ai';
 import { MdOutlineLocalParking } from 'react-icons/md';
 import { BiTrain } from 'react-icons/bi';
 import mapImg from './../public/assets/map.png';
+import contactImg from '../public/assets/ig-img-3.jpg'
 import Image from 'next/image';
 
 const Contact = () => {
@@ -22,9 +23,10 @@ const Contact = () => {
             <p className='py-3 text-xl'>Téléphone : 06 87 33 40 27 / 03 85 24 10 35</p>
             <p className='py-3 text-xl'>Mail : laberjotine@gmail.com</p>
           </div>
-          <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 duration-300'>
-            <img src='https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80' alt="" />
-          </div>
+          <div className='max-w-[80%] h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 duration-300'>
+          <Image src={contactImg} alt="" />
+          {/* <img src='https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80' alt="" /> */}
+        </div>
         </div>
       </div>
       <div className='w-full md:h-screen p-2 flex items-center'>
