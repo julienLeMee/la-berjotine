@@ -24,6 +24,7 @@ const Slider = ({ slides }) => {
       <div className='relative flex justify-center p-4'>
 
         {SliderData.map((slide, index) => {
+          console.log(slide.image);
           return (
             <div
               key={index}
@@ -45,6 +46,7 @@ const Slider = ({ slides }) => {
                     width='1440'
                     height='600'
                     className='object-cover max-h-96'
+                    priority
                   />
                 )}
                 <FaArrowCircleRight

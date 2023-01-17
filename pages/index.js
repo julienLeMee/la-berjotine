@@ -17,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Homepage />
-      <Slider slides={SliderData} />
+      {/* <Slider slides={SliderData} /> */}
       <About />
       <Rooms />
       <Reviews />
