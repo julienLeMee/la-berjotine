@@ -3,7 +3,8 @@ import Link from 'next/link';
 
 const Homepage = () => {
   return (
-    <div className='flex items-center justify-center h-screen bg-fixed bg-center bg-cover custom-img'>
+    <div className='flex items-center justify-center h-screen bg-fixed bg-center bg-cover'>
+      <img src='/assets/berjotine-homepage-2.jpg' alt='homepage' className='absolute top-0 left-0 right-0 bottom-0 z-[1] w-full h-screen object-cover' />
       <div className='absolute top-0 left-0 right-0 bottom-0 z-[2]' />
       <div className='max-w-[80%] text-white z-[2]'>
         <div>

@@ -11,8 +11,8 @@ const Reviews = () => {
               <div className="flex items-center justify-between p-4">
                 <h1 className='w-12 text-center rounded-lg text-white shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 bg-[#01647C] ease-in duration-300'>{review.note}</h1>
                 <div className="flex flex-col">
-                  <h2 className='text-bold text-lg pr-4'>{review.name}</h2>
-                  <p className='pr-4 text-xs text-gray-500'>{review.date}</p>
+                  <h2 className='text-bold text-lg'>{review.name}</h2>
+                  <p className='text-xs text-gray-500'>{review.date}</p>
                 </div>
               </div>
               <h3 className='p-4 text-bold text-xl'>{review.title}</h3>

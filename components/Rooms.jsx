@@ -22,16 +22,16 @@ const Projects = () => {
             projectUrl='/cosy'
           />
           <RoomItem
-            title='Vintage'
-            backgroundImg={vintageImg}
-            tarifs='130 € / nuit'
-            projectUrl='/vintage'
-          />
-          <RoomItem
             title='Art Deco'
             backgroundImg={artDecoImg}
             tarifs='120 € / nuit'
             projectUrl='/art-deco'
+          />
+          <RoomItem
+            title='Vintage'
+            backgroundImg={vintageImg}
+            tarifs='130 € / nuit'
+            projectUrl='/vintage'
           />
         </div>
       </div>
