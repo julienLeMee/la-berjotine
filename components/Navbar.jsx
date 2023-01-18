@@ -40,6 +40,7 @@ const Navbar = () => {
             alt='logo'
             className='cursor-pointer'
             style={{objectFit: 'cover'}}
+            priority
           />
         </Link>
         <ul style={{color: `${textColor}`}} className='hidden sm:flex'>
@@ -75,6 +76,7 @@ const Navbar = () => {
                   alt='logo'
                   className='cursor-pointer'
                   style={{objectFit: 'cover'}}
+                  priority
                 />
               </Link>
               <div onClick={handleNav} className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
