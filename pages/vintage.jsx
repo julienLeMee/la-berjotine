@@ -9,8 +9,8 @@ import vintageImg from '../public/assets/vintage.jpg'
 const Vintage = () => {
   return (
     <div className='w-full'>
-      <div className='w-screen h-[50vh] relative'>
-        <div className='absolute top-0 left-0 w-full h-[50vh] bg-black/30 z-10' />
+      <div className='w-screen h-[70vh] relative'>
+        <div className='absolute top-0 left-0 w-full h-[70vh] z-10' />
         <Image
             src={vintageImg}
             className='absolute h-full z-1'

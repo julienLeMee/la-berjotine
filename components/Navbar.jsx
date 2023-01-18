@@ -5,39 +5,54 @@ import { FaFacebookF } from 'react-icons/fa'
 import { BsFillTelephoneFill } from 'react-icons/bs'
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai'
 import navLogoImg from './../public/assets/LogoBerjotine.png'
+import navLogoImg2 from './../public/assets/LogoBerjotine2.png'
+import { useRouter } from 'next/router'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false)
   const [color, setColor] = useState('transparent')
   const [textColor, setTextColor] = useState('white')
   const [textShadow, setTextShadow] = useState('0 0 10px #01647C')
+  const [logo, setLogo] = useState(navLogoImg2)
+  const [shadow, setShadow] = useState(false)
+  const router = useRouter()
 
   const handleNav = () => {
     setNav(!nav)
   }
 
+  // useEffect(() => {
+  //   if (
+  //     router.asPath === '/art-deco' ||
+  //     router.asPath === '/cosy' ||
+  //     router.asPath === '/vintage'
+  //   ) {
+  //     setColor('transparent')
+  //     setTextColor('white')
+  //   } else {
+  //     setColor('white')
+  //     setTextColor('black')
+  //   }
+  // }, [router]) // on surveille la route
+
  useEffect(() => {
-    const changeColor = () => {
+    const handleShadow = () => {
       if (window.scrollY >= 50) {
-        setColor('#ffffff')
-        setTextColor('#000000')
-        setTextShadow('none')
+        setShadow(true)
       } else {
-        setColor('transparent')
-        setTextColor('#ffffff')
-        setTextShadow('0 0 10px #01647C')
+        setShadow(false)
       }
     }
-    window.addEventListener('scroll', changeColor)
+    window.addEventListener('scroll', handleShadow)
   }, [])
 
 
   return (
-    <div style={{backgroundColor: `${color}`}} className='fixed left-0 top-0 w-full z-[100] ease-in duration-300'>
-      <div className='max-w-[80%] m-auto flex items-center justify-between p-2 text-white'>
+    <div style={{backgroundColor: 'white'}} className={ shadow ? 'fixed left-0 top-0 w-full z-[100] ease-in duration-300 shadow-xl' : 'fixed left-0 top-0 w-full z-[100] ease-in duration-300'}>
+      <div className='max-w-[80%] m-auto flex items-center justify-between text-white'>
         <Link href='/' className='w-16 md:w-20 lg:w-20'>
           <Image
-            src={navLogoImg}
+            src={logo}
             width='auto'
             height='auto'
             alt='logo'
@@ -46,18 +61,18 @@ const Navbar = () => {
             priority
           />
         </Link>
-        <ul style={{color: `${textColor}`}} className='hidden sm:flex'>
+        <ul style={{color: 'black'}} className='hidden sm:flex'>
           <li className='p-4'>
-            <Link className='hover:text-gray-200 hover:underline' style={{textShadow: `${textShadow}`}} href='/'>Accueil</Link>
+            <Link className='hover:text-gray-200 hover:underline' href='/'>Accueil</Link>
           </li>
           <li className='p-4'>
-            <Link className='hover:text-gray-200 hover:underline' style={{textShadow: `${textShadow}`}} href='/#about'>À propos</Link>
+            <Link className='hover:text-gray-200 hover:underline' href='/#about'>À propos</Link>
           </li>
           <li className='p-4'>
-            <Link className='hover:text-gray-200 hover:underline' style={{textShadow: `${textShadow}`}} href='/#chambres'>Chambres</Link>
+            <Link className='hover:text-gray-200 hover:underline' href='/#chambres'>Chambres</Link>
           </li>
           <li className='p-4'>
-            <Link className='hover:text-gray-200 hover:underline' style={{textShadow: `${textShadow}`}} href='/contact'>Contact</Link>
+            <Link className='hover:text-gray-200 hover:underline' href='/contact'>Contact</Link>
           </li>
         </ul>
         <div onClick={handleNav} className='md:hidden cursor-pointer' style={{color: `${textColor}`}}>
