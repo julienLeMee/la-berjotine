@@ -49,7 +49,7 @@ const Navbar = () => {
             <Link className='hover:text-gray-300 hover:underline' href='/contact'>Contact</Link>
           </li>
         </ul>
-        <div onClick={handleNav} className='md:hidden' style={{color: `${textColor}`}}>
+        <div onClick={handleNav} className='md:hidden cursor-pointer' style={{color: `${textColor}`}}>
             <AiOutlineMenu size={25} />
         </div>
       </div>
@@ -73,21 +73,21 @@ const Navbar = () => {
           <div className='py-4 flex flex-col'>
             <ul className='uppercase'>
               <Link href='/'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>Accueil</li>
+                <li onClick={() => setNav(false)} className='py-4 text-sm hover:text-[#01647C]'>Accueil</li>
               </Link>
               <Link href='/#about'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>À propos</li>
+                <li onClick={() => setNav(false)} className='py-4 text-sm hover:text-[#01647C]'>À propos</li>
               </Link>
               <Link href='/#chambres'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>Chambres</li>
+                <li onClick={() => setNav(false)} className='py-4 text-sm hover:text-[#01647C]'>Chambres</li>
               </Link>
               <Link href='/contact'>
-                <li onClick={() => setNav(false)} className='py-4 pb-20 text-sm'>Contact</li>
+                <li onClick={() => setNav(false)} className='py-4 pb-20 text-sm hover:text-[#01647C]'>Contact</li>
               </Link>
             </ul>
             <div className='pt-30'>
               <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
-                <Link href="tel:0687324027" target='_blank'>
+                <Link href="tel:0687324027">
                   <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-[#01647C] ease-in duration-300'>
                     <BsFillTelephoneFill />
                   </div>
