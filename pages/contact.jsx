@@ -15,8 +15,8 @@ const Contact = () => {
   return (
     <>
       <div className='flex flex-col items-center justify-center h-screen bg-fixed bg-center bg-cover'>
-      <img src='/assets/berjotine-homepage-2.jpg' alt='homepage' className='absolute top-0 left-0 right-0 bottom-0 z-[1] w-full h-screen object-cover max-h-[75%] my-auto' />
-        <div className='absolute top-0 left-0 right-0 bottom-0 bg-black/40 z-[2] max-h-[75%] my-auto' />
+      <img src='/assets/berjotine-homepage-2.jpg' alt='homepage' className='absolute top-0 left-0 right-0 bottom-0 z-[1] w-full h-screen object-cover max-h-[80%] my-auto' />
+        <div className='absolute top-0 left-0 right-0 bottom-0 bg-black/40 z-[2] max-h-[80%] my-auto' />
         <div className=' text-white z-[2]'>
           <h1 className='text-5xl'>CONTACT</h1>
         </div>
