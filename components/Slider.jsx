@@ -19,12 +19,11 @@ const Slider = ({ slides }) => {
   }
 
   return (
-    <div id='gallery' className='max-w-[80%] mx-auto mt-20'>
+    <div id='gallery' className='max-w-[90%] mx-auto mt-20'>
       <h1 className='text-2xl font-bold text-center p-4'>Galerie</h1>
       <div className='relative flex justify-center p-4'>
 
         {SliderData.map((slide, index) => {
-          console.log(slide.image);
           return (
             <div
               key={index}
@@ -36,7 +35,7 @@ const Slider = ({ slides }) => {
             >
                 <FaArrowCircleLeft
                   onClick={prevSlide}
-                  className='absolute top-[50%] left-[30px] text-white/70 cursor-pointer select-none z-[2]'
+                  className='absolute top-[50%] left-[30px] translate-y-[-50%] text-white/70 cursor-pointer select-none z-[2]'
                   size={50}
                 />
                 {index === current && (
@@ -51,7 +50,7 @@ const Slider = ({ slides }) => {
                 )}
                 <FaArrowCircleRight
                   onClick={nextSlide}
-                  className='absolute top-[50%] right-[30px] text-white/70 cursor-pointer select-none z-[2]'
+                  className='absolute top-[50%] right-[30px] translate-y-[-50%] text-white/70 cursor-pointer select-none z-[2]'
                   size={50}
                 />
               </div>

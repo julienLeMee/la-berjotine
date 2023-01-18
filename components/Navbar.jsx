@@ -32,8 +32,15 @@ const Navbar = () => {
   return (
     <div style={{backgroundColor: `${color}`}} className='fixed left-0 top-0 w-full z-[100] ease-in duration-300'>
       <div className='max-w-[80%] m-auto flex items-center justify-between p-2 text-white'>
-        <Link href='/'>
-          <Image src={navLogoImg} width={80} height={50} alt='logo' />
+        <Link href='/' className='w-16 md:w-20 lg:w-20'>
+          <Image
+            src={navLogoImg}
+            width='auto'
+            height='auto'
+            alt='logo'
+            className='cursor-pointer'
+            style={{objectFit: 'cover'}}
+          />
         </Link>
         <ul style={{color: `${textColor}`}} className='hidden sm:flex'>
           <li className='p-4'>
@@ -60,8 +67,15 @@ const Navbar = () => {
 
           <div>
             <div className='flex items-center justify-between mx-auto w-full'>
-              <Link href='/'>
-                <Image src={navLogoImg} width={87} height={35} alt='logo' />
+              <Link href='/' className='w-16'>
+                <Image
+                  src={navLogoImg}
+                  width='auto'
+                  height='auto'
+                  alt='logo'
+                  className='cursor-pointer'
+                  style={{objectFit: 'cover'}}
+                />
               </Link>
               <div onClick={handleNav} className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
                 <AiOutlineClose size={25} />

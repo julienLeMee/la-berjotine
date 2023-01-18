@@ -10,7 +10,15 @@ const ArtDeco = () => {
     <div className='w-full'>
       <div className='w-screen h-[50vh] relative'>
         <div className='absolute top-0 left-0 w-full h-[50vh] bg-black/30 z-10' />
-          <Image className='absolute z-1' layout='fill' objectFit='cover' src={artDecoImg} alt='cosy' />
+        <Image
+            src={artDecoImg}
+            className='absolute h-full z-1'
+            alt='cosy'
+            style={{objectFit: 'cover'}}
+            width='1920'
+            height='1080'
+            priority
+          />
       </div>
 
       <div className='max-w-[80%] mx-auto py-20 grid md:grid-cols-5 gap 8 pt-8'>
