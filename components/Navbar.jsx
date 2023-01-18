@@ -10,6 +10,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(false)
   const [color, setColor] = useState('transparent')
   const [textColor, setTextColor] = useState('white')
+  const [textShadow, setTextShadow] = useState('0 0 10px #01647C')
 
   const handleNav = () => {
     setNav(!nav)
@@ -20,9 +21,11 @@ const Navbar = () => {
       if (window.scrollY >= 50) {
         setColor('#ffffff')
         setTextColor('#000000')
+        setTextShadow('none')
       } else {
         setColor('transparent')
         setTextColor('#ffffff')
+        setTextShadow('0 0 10px #01647C')
       }
     }
     window.addEventListener('scroll', changeColor)
@@ -45,16 +48,16 @@ const Navbar = () => {
         </Link>
         <ul style={{color: `${textColor}`}} className='hidden sm:flex'>
           <li className='p-4'>
-            <Link className='hover:text-gray-300 hover:underline' href='/'>Accueil</Link>
+            <Link className='hover:text-gray-200 hover:underline' style={{textShadow: `${textShadow}`}} href='/'>Accueil</Link>
           </li>
           <li className='p-4'>
-            <Link className='hover:text-gray-300 hover:underline' href='/#about'>À propos</Link>
+            <Link className='hover:text-gray-200 hover:underline' style={{textShadow: `${textShadow}`}} href='/#about'>À propos</Link>
           </li>
           <li className='p-4'>
-            <Link className='hover:text-gray-300 hover:underline' href='/#chambres'>Chambres</Link>
+            <Link className='hover:text-gray-200 hover:underline' style={{textShadow: `${textShadow}`}} href='/#chambres'>Chambres</Link>
           </li>
           <li className='p-4'>
-            <Link className='hover:text-gray-300 hover:underline' href='/contact'>Contact</Link>
+            <Link className='hover:text-gray-200 hover:underline' style={{textShadow: `${textShadow}`}} href='/contact'>Contact</Link>
           </li>
         </ul>
         <div onClick={handleNav} className='md:hidden cursor-pointer' style={{color: `${textColor}`}}>
