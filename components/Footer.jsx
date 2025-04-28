@@ -30,7 +30,7 @@ const Footer = () => {
           </div>
         </Link>
       </div>
-        <p className='text-sm text-center pb-8'>2023 | © La Berjotine tous droits réservés</p>
+        <p className='text-sm text-center pb-8'>{new Date().getFullYear()} | © La Berjotine tous droits réservés</p>
     </div>
   )
 }
