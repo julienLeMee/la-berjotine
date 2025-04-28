@@ -3,7 +3,7 @@ import React from 'react'
 import { RiRadioButtonFill } from 'react-icons/ri'
 import { AiOutlineArrowLeft } from 'react-icons/ai'
 import Link from 'next/link'
-import VintageGallery from '../components/VintageGallery'
+import VintageGallery from '../components/VintageGallery.jsx'
 import vintageImg from '../public/assets/vintage.jpg'
 
 const Vintage = () => {
