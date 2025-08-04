@@ -54,7 +54,7 @@ const Contact = () => {
             <div className="flex items-start py-4">
               <div className='w-10 h-10 mr-10  rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-[#01647C] ease-in duration-300'>
                 <BsFillTelephoneFill />
-              </div>
+              </div> 
               <p className='pb-3 text-xl mb-4'>
                 Téléphone : <br />
                 <a className='text-[#01647C]' href="tel:0687334027" onClick={(event) => event.preventDefault()} >06.87.33.40.27</a> <br />
