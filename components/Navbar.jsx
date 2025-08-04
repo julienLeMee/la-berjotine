@@ -121,7 +121,7 @@ const Navbar = () => {
             </ul>
             <div className='pt-30'>
               <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
-                <Link href="tel:0687324027">
+                <Link href="tel:0687334027">
                   <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-[#01647C] ease-in duration-300'>
                     <BsFillTelephoneFill />
                   </div>

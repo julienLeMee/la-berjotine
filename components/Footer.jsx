@@ -11,7 +11,7 @@ const Footer = () => {
         <p className='text-sm'>
           13 Rue du Calvaire <br />
           71120 Charolles <br />
-          <a className='text-[#01647C]' href="tel:0687324027">06.87.33.40.27</a> <br />
+          <a className='text-[#01647C]' href="tel:0687334027">06.87.33.40.27</a> <br />
           <a className='text-[#01647C]' href="tel:0385241035">03.85.24.10.35</a>
         </p>
         <Link href="tel:0687324027">

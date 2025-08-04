@@ -21,7 +21,7 @@ const Contact = () => {
           <h1 className='text-5xl'>CONTACT</h1>
         </div>
         <div className='flex items-center justify-center my-4 w-full sm:w-[80%] z-10'>
-                <Link className='p-4' href="tel:0687324027" target='_blank'>
+                <Link className='p-4' href="tel:0687334027" target='_blank'>
                   <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 bg-white text-[#01647C] ease-in duration-300'>
                     <BsFillTelephoneFill />
                   </div>
@@ -57,7 +57,7 @@ const Contact = () => {
               </div>
               <p className='pb-3 text-xl mb-4'>
                 Téléphone : <br />
-                <a className='text-[#01647C]' href="tel:0687324027" onClick={(event) => event.preventDefault()} >06.87.33.40.27</a> <br />
+                <a className='text-[#01647C]' href="tel:0687334027" onClick={(event) => event.preventDefault()} >06.87.33.40.27</a> <br />
                 <a className='text-[#01647C]' href="tel:0385241035" onClick={(event) => event.preventDefault()} >03.85.24.10.35</a>
               </p>
             </div>
