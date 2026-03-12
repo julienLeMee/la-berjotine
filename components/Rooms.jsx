@@ -18,19 +18,19 @@ const Projects = () => {
           <RoomItem
             title='Cosy'
             backgroundImg={cosyImg}
-            tarifs='115 € / nuit'
+            tarifs='125 € / nuit'
             projectUrl='/cosy'
           />
           <RoomItem
             title='Art Deco'
             backgroundImg={artDecoImg}
-            tarifs='130 € / nuit'
+            tarifs='140 € / nuit'
             projectUrl='/art-deco'
           />
           <RoomItem
             title='Vintage'
             backgroundImg={vintageImg}
-            tarifs='140 € / nuit'
+            tarifs='150 € / nuit'
             projectUrl='/vintage'
           />
         </div>

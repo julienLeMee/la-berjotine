@@ -14,7 +14,7 @@ const Footer = () => {
           <a className='text-[#01647C]' href="tel:0687334027">06.87.33.40.27</a> <br />
           <a className='text-[#01647C]' href="tel:0385241035">03.85.24.10.35</a>
         </p>
-        <Link href="tel:0687324027">
+        <Link href="tel:0687334027">
           <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-[#01647C] ease-in duration-300'>
             <BsFillTelephoneFill />
           </div>

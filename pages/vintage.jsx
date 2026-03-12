@@ -3,7 +3,7 @@ import React from 'react'
 import { RiRadioButtonFill } from 'react-icons/ri'
 import { AiOutlineArrowLeft } from 'react-icons/ai'
 import Link from 'next/link'
-import VintageGallery from '@/components/VintageGallery'
+import VintageGallery from '@/components/vintageGallery'
 import vintageImg from '../public/assets/vintage.jpg'
 
 const Vintage = () => {
@@ -34,7 +34,7 @@ const Vintage = () => {
           <div className="p-2">
             <p className='text-center font-bold pb-2'>Tarifs</p>
             <div className='grid grid-cols-2 md:grid-cols-1'>
-              <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='mr-2'/> 140 € / nuit</p>
+              <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='mr-2'/> 150 € / nuit</p>
               <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='mr-2'/> Petit déjeuner inclus</p>
               <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='mr-2'/> Parking gratuit</p>
               <p className='text-gray-600 py-2 flex items-center'><RiRadioButtonFill className='mr-2'/> Wifi gratuit</p>
