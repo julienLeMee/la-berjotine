@@ -63,16 +63,16 @@ const Navbar = () => {
         </Link>
         <ul style={{color: 'black'}} className='hidden sm:flex'>
           <li className='p-4'>
-            <Link className='hover:text-gray-200 hover:underline' href='/'>Accueil</Link>
+            <Link className='hover:text-[#01647C] hover:underline' href='/'>Accueil</Link>
           </li>
           <li className='p-4'>
-            <Link className='hover:text-gray-200 hover:underline' href='/#about'>À propos</Link>
+            <Link className='hover:text-[#01647C] hover:underline' href='/#about'>À propos</Link>
           </li>
           <li className='p-4'>
-            <Link className='hover:text-gray-200 hover:underline' href='/#chambres'>Chambres</Link>
+            <Link className='hover:text-[#01647C] hover:underline' href='/#chambres'>Chambres</Link>
           </li>
           <li className='p-4'>
-            <Link className='hover:text-gray-200 hover:underline' href='/contact'>Contact</Link>
+            <Link className='hover:text-[#01647C] hover:underline' href='/contact'>Contact</Link>
           </li>
         </ul>
         <div onClick={handleNav} className='md:hidden cursor-pointer' style={{color: 'black'}}>
