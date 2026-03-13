@@ -29,7 +29,11 @@ const Footer = () => {
           </div>
         </Link>
       </div>
-        <p className='text-sm text-center pb-8'>{new Date().getFullYear()} | © La Berjotine tous droits réservés</p>
+        <p className='text-sm text-center pb-8'>
+          {new Date().getFullYear()} | © La Berjotine tous droits réservés
+          {' · '}
+          <Link href='/politique-de-cookies' className='text-[#01647C] hover:underline'>Politique de cookies</Link>
+        </p>
     </div>
   )
 }
