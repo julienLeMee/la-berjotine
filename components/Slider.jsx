@@ -22,40 +22,34 @@ const Slider = ({ slides }) => {
     <div id='gallery' className='max-w-[90%] mx-auto mt-10'>
       <h1 className='text-2xl font-bold text-center p-4'>Galerie</h1>
       <div className='relative flex justify-center p-4'>
-
-        {SliderData.map((slide, index) => {
-          return (
+        <div className='relative w-full' style={{ aspectRatio: '1440/600' }}>
+          {SliderData.map((slide, index) => (
             <div
               key={index}
-              className={
-                index === current
-                  ? 'opacity-[1] ease-in duration-1000'
-                  : 'opacity-0'
-              }
+              className={`absolute inset-0 transition-opacity duration-1000 ${
+                index === current ? 'opacity-100' : 'opacity-0'
+              }`}
             >
-                <FaArrowCircleLeft
-                  onClick={prevSlide}
-                  className='absolute top-[50%] left-[30px] translate-y-[-50%] text-white/70 cursor-pointer select-none z-[2]'
-                  size={50}
-                />
-                {index === current && (
-                  <Image
-                    src={slide.image}
-                    alt='/'
-                    width='1440'
-                    height='600'
-                    className='object-cover max-h-96'
-                    priority
-                  />
-                )}
-                <FaArrowCircleRight
-                  onClick={nextSlide}
-                  className='absolute top-[50%] right-[30px] translate-y-[-50%] text-white/70 cursor-pointer select-none z-[2]'
-                  size={50}
-                />
-              </div>
-          );
-        })}
+              <Image
+                src={slide.image}
+                alt='/'
+                fill
+                className='object-cover max-h-96'
+                priority={index === 0}
+              />
+            </div>
+          ))}
+          <FaArrowCircleLeft
+            onClick={prevSlide}
+            className='absolute top-[50%] left-[30px] translate-y-[-50%] text-white/70 cursor-pointer select-none z-[2]'
+            size={50}
+          />
+          <FaArrowCircleRight
+            onClick={nextSlide}
+            className='absolute top-[50%] right-[30px] translate-y-[-50%] text-white/70 cursor-pointer select-none z-[2]'
+            size={50}
+          />
+        </div>
       </div>
     </div>
   );
