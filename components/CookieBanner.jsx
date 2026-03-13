@@ -22,7 +22,7 @@ const CookieBanner = () => {
   if (!visible) return null
 
   return (
-    <div className='fixed bottom-0 z-[200] bg-white border-t border-gray-200 shadow-lg py-4 flex flex-col sm:flex-row items-center justify-between gap-4' style={{ left: '1rem', right: '1rem', marginBottom: '1rem', borderRadius: '0.75rem' }}>
+    <div className='fixed bottom-0 z-[200] bg-white border-t border-gray-200 shadow-lg py-4 flex flex-col sm:flex-row items-center justify-between gap-4' style={{ left: '1rem', right: '1rem', marginBottom: '1rem' }}>
       <p className='text-sm text-gray-600 text-center sm:text-left px-6'>
         Ce site utilise des cookies pour améliorer votre expérience.{' '}
         <Link href='/politique-de-cookies' className='underline text-[#01647C] hover:text-[#014f63]'>
