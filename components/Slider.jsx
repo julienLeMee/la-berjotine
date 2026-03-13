@@ -22,7 +22,7 @@ const Slider = ({ slides }) => {
     <div id='gallery' className='max-w-[90%] mx-auto mt-10'>
       <h1 className='text-2xl font-bold text-center p-4'>Galerie</h1>
       <div className='relative flex justify-center p-4'>
-        <div className='relative w-full' style={{ aspectRatio: '1440/600' }}>
+        <div className='relative w-full max-h-96' style={{ aspectRatio: '1440/600' }}>
           {SliderData.map((slide, index) => (
             <div
               key={index}
