@@ -57,8 +57,7 @@ const Contact = () => {
               </div> 
               <p className='pb-3 text-xl mb-4'>
                 Téléphone : <br />
-                <a className='text-[#01647C]' href="tel:0687334027" onClick={(event) => event.preventDefault()} >06.87.33.40.27</a> <br />
-                <a className='text-[#01647C]' href="tel:0385241035" onClick={(event) => event.preventDefault()} >03.85.24.10.35</a>
+                <a className='text-[#01647C]' href="tel:0687334027" onClick={(event) => event.preventDefault()} >06.87.33.40.27</a>
               </p>
             </div>
             <div className="flex items-start py-4">
