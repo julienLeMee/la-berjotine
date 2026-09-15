@@ -1,26 +1,35 @@
 import React from 'react'
 import Image from 'next/image'
+import { FiCoffee, FiHome, FiMapPin } from 'react-icons/fi'
 import aboutImg from '../public/assets/ig-img-3.jpg'
 
 const About = () => {
   return (
-    <div id='about' className='w-full py-40 flex items-center mb-2 md:mb-10'>
-      <div className='max-w-[80%] m-auto md:grid grid-cols-3'>
-        <div className='col-span-2'>
-          <p className='uppercase text-xl tracking-widest text-[#01647C] py-4'>UN COIN DE PARADIS AU COEUR DU CHAROLAIS</p>
-          <p className='py-2 pr-10 mb-8 text-gray-600'>
-            Cette maison du 18ème siècle, entièrement rénovée, vous propose 3 chambres aux charmes très différents, chacune avec une ambiance unique créée par une décoration toute en nuances de couleurs. <br />
-            Elle allie parfaitement l'ancien et le moderne pour vous offrir un séjour confortable et agréable. <br />
-            Située à deux pas de la place de l'église de Charolles, La Berjotine est idéalement située pour découvrir les richesses culturelles et historiques de la région. <br />
-            N'hésitez pas à venir passer un moment de détente et de découverte dans ce coin de paradis.
-          </p>
+    <section id='about' className='bg-white py-24 sm:py-32'>
+      <div className='site-container grid items-center gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:gap-24'>
+        <div className='relative mx-auto w-full max-w-lg lg:mx-0'>
+          <div className='absolute -left-4 -top-4 h-full w-full rounded-[2rem] border border-[#096b79]/20 sm:-left-7 sm:-top-7' />
+          <div className='relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-[#e8dfd2]'>
+            <Image src={aboutImg} alt="L'enseigne de La Berjotine" fill className='object-cover' sizes='(max-width: 1024px) 90vw, 500px' />
+          </div>
         </div>
-        <div className='max-w-[80%] h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 duration-300'>
-          <Image src={aboutImg} alt="" />
-          {/* <img src='https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80' alt="" /> */}
+
+        <div>
+          <p className='eyebrow'>La maison</p>
+          <h2 className='section-title max-w-2xl'>Le charme de l’ancien, le confort d’aujourd’hui.</h2>
+          <div className='mt-8 space-y-5 text-base leading-8 text-[#65716d]'>
+            <p>Cette maison du XVIIIe siècle, entièrement rénovée, abrite trois chambres aux personnalités très différentes. Chacune offre une ambiance unique, dessinée par les couleurs et les objets qui l’habitent.</p>
+            <p>À deux pas de la place de l’église de Charolles, La Berjotine est un point de départ idéal pour découvrir les paysages, les saveurs et le patrimoine de la Bourgogne du Sud.</p>
+          </div>
+
+          <div className='mt-10 grid gap-4 sm:grid-cols-3'>
+            <div className='rounded-2xl bg-[#f7f4ee] p-5'><FiHome className='mb-3 text-[#096b79]' size={22} /><p className='text-sm font-semibold'>3 chambres uniques</p></div>
+            <div className='rounded-2xl bg-[#f7f4ee] p-5'><FiCoffee className='mb-3 text-[#096b79]' size={22} /><p className='text-sm font-semibold'>Petit déjeuner inclus</p></div>
+            <div className='rounded-2xl bg-[#f7f4ee] p-5'><FiMapPin className='mb-3 text-[#096b79]' size={22} /><p className='text-sm font-semibold'>Au cœur de Charolles</p></div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

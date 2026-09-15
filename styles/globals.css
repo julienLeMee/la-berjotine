@@ -2,13 +2,85 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+:root {
+  --ink: #18312f;
+  --muted: #65716d;
+  --brand: #096b79;
+  --brand-dark: #07525d;
+  --cream: #f7f4ee;
+  --sand: #e8dfd2;
+}
 
 html {
-  --scroll-behavior: smooth!important;
-  scroll-behavior: smooth!important;
-  /* font-family: 'Raleway', sans-serif; */
-  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+::selection {
+  background: #b9dadd;
+  color: var(--ink);
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 4px;
+}
+
+@layer components {
+  .site-container {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12;
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.24em] text-[#096b79] sm:text-sm;
+  }
+
+  .section-title {
+    @apply mt-4 text-4xl leading-tight text-[#18312f] sm:text-5xl;
+  }
+
+  .button-primary {
+    @apply inline-flex items-center justify-center rounded-full bg-[#096b79] px-6 py-3 text-sm font-semibold text-white shadow-sm transition duration-300 hover:-translate-y-0.5 hover:bg-[#07525d] hover:shadow-lg;
+  }
+
+  .button-secondary {
+    @apply inline-flex items-center justify-center rounded-full border border-white/50 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur-sm transition duration-300 hover:bg-white hover:text-[#18312f];
+  }
+
+  .soft-card {
+    @apply rounded-[2rem] border border-[#18312f]/10 bg-white shadow-[0_18px_55px_rgba(24,49,47,0.08)];
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
 }

@@ -1,11 +1,12 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Section = ({ title, children }) => (
-  <div className='mb-10'>
-    <p className='uppercase text-xl tracking-widest text-[#01647C] mb-4'>{title}</p>
+  <section className='mb-12'>
+    <h2 className='font-display text-2xl text-[#18312f] mb-4'>{title}</h2>
     <div className='text-gray-700 leading-relaxed space-y-3'>{children}</div>
-  </div>
+  </section>
 )
 
 const PolitiqueDeCookies = () => {
@@ -15,30 +16,30 @@ const PolitiqueDeCookies = () => {
         <title>Politique de cookies – La Berjotine</title>
       </Head>
 
-      {/* Hero — pt-20 pour compenser le header fixe */}
-      <div className='relative h-48 md:h-64 overflow-hidden'>
-        <img
+      <div className='relative mt-[76px] h-64 overflow-hidden sm:m-5 sm:mt-[96px] sm:rounded-[2rem] md:h-80'>
+        <Image
           src='/assets/berjotine-homepage-2.jpg'
           alt='politique de cookies'
-          className='absolute inset-0 w-full h-full object-cover'
+          fill
+          className='object-cover'
+          sizes='100vw'
         />
-        <div className='absolute inset-0 bg-black/50' />
-        <div className='relative z-10 flex items-center justify-center h-full pt-20'>
-          <h1 className='text-3xl md:text-5xl font-semibold tracking-wide text-white text-center'>
-            POLITIQUE DE COOKIES
+        <div className='absolute inset-0 bg-[#292f2e]/60' />
+        <div className='relative z-10 flex h-full items-center justify-center'>
+          <h1 className='text-center text-4xl text-white md:text-6xl'>
+            Politique de cookies
           </h1>
         </div>
       </div>
 
-      {/* Contenu */}
-      <div className='w-full py-20'>
-        <div className='max-w-[80%] mx-auto'>
+      <div className='w-full py-20 sm:py-28'>
+        <div className='site-container max-w-4xl'>
 
           <Section title="Qu'est-ce qu'un cookie ?">
             <p>
               Un cookie est un petit fichier texte déposé sur votre terminal (ordinateur, tablette, smartphone)
               lors de votre visite sur un site internet. Il permet au site de mémoriser des informations sur votre
-              navigation afin d'améliorer votre expérience et de mesurer l'audience du site.
+              navigation afin d’améliorer votre expérience et de mesurer l’audience du site.
             </p>
           </Section>
 
@@ -50,7 +51,7 @@ const PolitiqueDeCookies = () => {
             </p>
             <div className='overflow-x-auto mt-4'>
               <table className='w-full text-sm border border-gray-200 rounded-lg overflow-hidden'>
-                <thead className='bg-[#01647C] text-white'>
+                <thead className='bg-[#096b79] text-white'>
                   <tr>
                     <th className='text-left px-4 py-3'>Nom</th>
                     <th className='text-left px-4 py-3'>Finalité</th>
@@ -73,22 +74,22 @@ const PolitiqueDeCookies = () => {
           <Section title="Base légale">
             <p>
               Conformément aux recommandations de la <span className='font-semibold'>CNIL</span> (Commission Nationale
-              de l'Informatique et des Libertés) et au <span className='font-semibold'>Règlement Général sur la
+              de l’Informatique et des Libertés) et au <span className='font-semibold'>Règlement Général sur la
               Protection des Données (RGPD)</span>, tout dépôt de cookie non strictement nécessaire au fonctionnement
               du site requiert votre consentement préalable.
             </p>
             <p>
               Les cookies techniques utilisés sur ce site sont exemptés de consentement obligatoire en vertu de
-              l'article 82 de la loi Informatique et Libertés, car ils sont indispensables au fonctionnement
+              l’article 82 de la loi Informatique et Libertés, car ils sont indispensables au fonctionnement
               du service demandé.
             </p>
           </Section>
 
           <Section title="Votre consentement">
             <p>
-              Lors de votre première visite sur ce site, un bandeau vous informe de l'utilisation des cookies
+              Lors de votre première visite sur ce site, un bandeau vous informe de l’utilisation des cookies
               et vous permet de les <span className='font-semibold'>accepter ou de les refuser</span>.
-              Le refus n'a aucune incidence sur votre navigation.
+              Le refus n’a aucune incidence sur votre navigation.
             </p>
             <p>
               Votre choix est mémorisé pendant <span className='font-semibold'>13 mois</span> maximum,
@@ -122,8 +123,8 @@ const PolitiqueDeCookies = () => {
 
           <Section title="Vos droits">
             <p>
-              Conformément au RGPD et à la loi Informatique et Libertés, vous disposez d'un droit d'accès,
-              de rectification, d'effacement et d'opposition concernant vos données personnelles.
+              Conformément au RGPD et à la loi Informatique et Libertés, vous disposez d’un droit d’accès,
+              de rectification, d’effacement et d’opposition concernant vos données personnelles.
             </p>
             <p>
               Pour exercer ces droits ou pour toute question relative à notre politique de cookies, vous pouvez
@@ -133,7 +134,7 @@ const PolitiqueDeCookies = () => {
               </a>
             </p>
             <p>
-              Vous avez également le droit d'introduire une réclamation auprès de la CNIL :{' '}
+              Vous avez également le droit d’introduire une réclamation auprès de la CNIL :{' '}
               <a href='https://www.cnil.fr/fr/vous-souhaitez-contacter-la-cnil' target='_blank' rel='noopener noreferrer' className='text-[#01647C] hover:underline'>
                 cnil.fr
               </a>

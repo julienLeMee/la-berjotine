@@ -1,42 +1,45 @@
 import React from 'react'
+import { FiArrowUpRight } from 'react-icons/fi'
 import { ReviewsData } from './ReviewsData'
 
 const Reviews = () => {
   return (
-    <div className='max-w-[80%] mx-auto py-24'>
-        <p className='text-xl font-bold text-center py-4'>L'établissement La Berjotine - Maison d'hôtes accueille des clients depuis 2015.</p>
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-4 mr-2'>
-        {ReviewsData.map((review) => (
-            <div key={review.id} className='w-full rounded-lg shadow-lg shadow-gray-400 p-3 m-2'>
-              <div className="flex items-center justify-between p-4">
-                <h1 className='w-12 text-center rounded-lg text-white shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 bg-[#01647C] ease-in duration-300'>{review.note}</h1>
-                <div className="flex flex-col">
-                  <h2 className='text-bold text-lg'>{review.name}</h2>
-                  <p className='text-xs text-gray-500'>{review.date}</p>
-                </div>
+    <section className='bg-[#292f2e] py-24 text-white sm:py-32'>
+      <div className='site-container'>
+        <div className='mb-12 flex flex-col justify-between gap-6 lg:flex-row lg:items-end'>
+          <div>
+            <p className='eyebrow text-[#8fc7ca]'>Ils sont venus</p>
+            <h2 className='mt-4 max-w-2xl text-4xl leading-tight sm:text-5xl'>Des séjours qui laissent<br />de beaux souvenirs.</h2>
+          </div>
+          <a href='https://www.booking.com/reviews/fr/hotel/la-berjotine.fr.html' target='_blank' rel='noreferrer' className='group flex w-full items-center rounded-[1.25rem] bg-[#faf8f4] px-3.5 py-3 text-[#18312f] shadow-[0_16px_45px_rgba(0,0,0,0.12)] transition-shadow duration-300 hover:shadow-[0_20px_55px_rgba(0,0,0,0.2)] sm:px-4 lg:w-[calc((100%-2.5rem)/3)]'>
+            <span className='grid h-12 w-12 shrink-0 place-items-center rounded-[0.55rem] rounded-bl-none bg-[#003b95] text-lg font-bold text-white shadow-sm'>9,2</span>
+            <span className='mx-3.5 h-10 w-px bg-[#18312f]/10 sm:mx-4' />
+            <span>
+              <strong className='block font-display text-lg font-normal'>Fabuleux</strong>
+              <span className='mt-1 block text-[11px] font-semibold uppercase tracking-[0.16em] text-[#65716d]'>9,2 sur 10 · Booking.com</span>
+            </span>
+            <span className='ml-auto hidden h-8 w-8 shrink-0 place-items-center rounded-full border border-[#18312f]/10 text-[#096b79] transition group-hover:rotate-45 group-hover:bg-[#096b79] group-hover:text-white sm:grid'><FiArrowUpRight size={14} /></span>
+          </a>
+        </div>
+
+        <div className='grid gap-5 lg:grid-cols-3'>
+          {ReviewsData.map((review) => (
+            <article key={review.id} className='flex min-h-[310px] flex-col rounded-[1.75rem] border border-white/10 bg-white/[0.06] p-7 backdrop-blur-sm sm:p-8'>
+              <div className='flex items-center justify-between'>
+                <span className='font-display text-3xl text-[#8fc7ca]'>{review.note}<small className='font-sans text-xs text-white/45'>/{review.scale || 10}</small></span>
+                <span className='text-xs uppercase tracking-[0.16em] text-white/45'>{review.date}</span>
               </div>
-              <h3 className='p-4 text-bold text-xl'>{review.title}</h3>
-              <p className='p-4 text-sm'>{review.comment}</p>
-            </div>
-        ))}
+              <h3 className='mt-7 text-2xl'>{review.title}</h3>
+              <blockquote className='mt-4 flex-1 text-sm leading-7 text-white/70'>{review.comment.replaceAll("''", '').trim()}</blockquote>
+              <div className='mt-6 flex items-center justify-between gap-4'>
+                <p className='text-sm font-semibold'>— {review.name}</p>
+                <a href={review.sourceUrl} target='_blank' rel='noreferrer' className='text-xs text-white/45 underline underline-offset-4 transition hover:text-white'>Avis {review.source}</a>
+              </div>
+            </article>
+          ))}
+        </div>
       </div>
-    </div>
-    // <div className='max-w-[80%] mx-auto py-24'>
-    //   <p className='text-xl font-bold'>L'établissement La Berjotine - Maison d'hôtes accueille des clients depuis 2015.</p>
-    //   <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 p-4 w-full'>
-    //   {ReviewsData.map((review) => (
-    //     <div key={review.id} className='shadow-lg shadow-gray-400 p-3 m-2 w-[250px]'>
-    //       <div className="flex items-center justify-between p-2">
-    //         <h1 className='w-12 text-center rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-[#01647C] ease-in duration-300'>{review.note}</h1>
-    //         <h2 className='text-bold text-lg'>{review.name}</h2>
-    //       </div>
-    //       <h3>{review.title}</h3>
-    //       <p>{review.comment}</p>
-    //       <p>{review.date}</p>
-    //     </div>
-    //   ))}
-    //     </div>
-    // </div>
+    </section>
   )
 }
 
