@@ -19,13 +19,14 @@ const Homepage = () => {
         <div className='absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-black/10' />
       </div>
 
-      <div className='site-container relative z-10 flex h-full items-center pt-[76px]'>
+      <div className='site-container relative z-10 flex h-full items-center px-8 sm:px-12 pt-[76px] md:px-16'>
         <div className='max-w-4xl pb-4 text-white'>
           <p className='mb-5 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-white/80 sm:text-sm'>
             <FiMapPin aria-hidden='true' /> Charolles · Bourgogne du Sud
           </p>
           <h1 className='text-5xl leading-[0.98] tracking-[-0.035em] sm:text-6xl lg:text-7xl'>
             Une maison d’hôtes<br className='hidden sm:block' />
+            <br className='sm:hidden block' />
             <span className='italic text-[#d7eceb]'>pleine de caractère.</span>
           </h1>
           <p className='mt-6 max-w-lg text-base leading-7 text-white/80 sm:text-lg'>
